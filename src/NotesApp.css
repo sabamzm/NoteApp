@@ -1,0 +1,58 @@
+body {
+    background-image: url('../public/desk-2325627.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    height:  100vh;
+    width:  100%;
+    overflow: hidden;
+    background-color: rgba(0,  0,  0,  0.5); /* Semi-transparent black */
+    background-blend-mode: multiply; /* Blend mode to achieve transparency effect */
+}
+button{
+    background-color: #405C34; /* Green */
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: 2px solid #2B3726;
+    border-radius: 6px;
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: #2B3726;
+}
+.notes-app{
+    display: flow;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.notes-app input{
+    display: block;
+    width: 70%;
+    height: 40px;
+    margin: auto;
+    margin-bottom: 16px;
+    border: 2px solid #2B3726;
+    border-radius: 6px;
+    padding-left: 5px;
+}
+
+/* Example of using media queries to adjust the background-size for different viewport sizes */
+@media (min-width:  1200px) {
+    body {
+        background-size:  100%  100%; /* Adjust as needed for larger screens */
+    }
+}
+
+@media (max-width:  768px) {
+    body {
+        background-size: cover; /* Use cover for smaller screens to ensure the image covers the entire area */
+    }
+}
